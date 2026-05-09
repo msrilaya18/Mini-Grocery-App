@@ -19,27 +19,26 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     // Hardcoding some beautiful mock data with Unsplash images
     private val allProducts = listOf(
-
-    ),
-        Product(2, "Beef Steak", 165.0, "https://cdn.dummyjson.com/product-images/groceries/beef-steak/thumbnail.png", "Vegetables"),
-        Product(3, "Chicken Meat", 150.0, "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/thumbnail.png", "Vegetables"),
-        Product(4, "Cooking Oil", 125.0, "https://cdn.dummyjson.com/product-images/groceries/cooking-oil/thumbnail.png", "Snacks"),
-        Product(5, "Cucumber", 17.0, "https://cdn.dummyjson.com/product-images/groceries/cucumber/thumbnail.png", "Vegetables"),
-        Product(6, "Eggs", 45.0, "https://cdn.dummyjson.com/product-images/groceries/eggs/thumbnail.png", "Dairy"),
-        Product(7, "Fish Steak", 175.0, "https://cdn.dummyjson.com/product-images/groceries/fish-steak/thumbnail.png", "Snacks"),
-        Product(8, "Green Bell Pepper", 16.0, "https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/thumbnail.png", "Vegetables"),
-        Product(9, "Green Chili Pepper", 15.0, "https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/thumbnail.png", "Vegetables"),
-        Product(10, "Honey Jar", 135.0, "https://cdn.dummyjson.com/product-images/groceries/honey-jar/thumbnail.png", "Snacks"),
-        Product(11, "Ice Cream", 127.0, "https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.png", "Dairy"),
-        Product(12, "Juice", 50.0, "https://cdn.dummyjson.com/product-images/groceries/juice/thumbnail.png", "Snacks"),
-        Product(13, "Kiwi", 32.0, "https://cdn.dummyjson.com/product-images/groceries/kiwi/thumbnail.png", "Vegetables"),
-        Product(14, "Lemon", 14.0, "https://cdn.dummyjson.com/product-images/groceries/lemon/thumbnail.png", "Vegetables"),
-        Product(15, "Milk", 47.0, "https://cdn.dummyjson.com/product-images/groceries/milk/thumbnail.png", "Dairy"),
-        Product(16, "Mulberry", 55.0, "https://cdn.dummyjson.com/product-images/groceries/mulberry/thumbnail.png", "Snacks"),
-        Product(17, "Nescafe Coffee", 140.0, "https://cdn.dummyjson.com/product-images/groceries/nescafe-coffee/thumbnail.png", "Snacks"),
-        Product(18, "Potatoes", 31.0, "https://cdn.dummyjson.com/product-images/groceries/potatoes/thumbnail.png", "Vegetables"),
-        Product(19, "Red Onions", 45.0, "https://cdn.dummyjson.com/product-images/groceries/red-onions/thumbnail.png", "Vegetables"),
-        Product(20, "Strawberry", 60.0, "https://cdn.dummyjson.com/product-images/groceries/strawberry/thumbnail.png", "Vegetables")
+        Product(1, "Fresh Tomatoes", 40.0, "https://spoonacular.com/cdn/ingredients_250x250/tomato.png", "Vegetables"),
+        Product(2, "Red Onions", 35.0, "https://spoonacular.com/cdn/ingredients_250x250/brown-onion.png", "Vegetables"),
+        Product(3, "Potatoes", 30.0, "https://spoonacular.com/cdn/ingredients_250x250/potatoes-yukon-gold.png", "Vegetables"),
+        Product(4, "Carrots", 25.0, "https://spoonacular.com/cdn/ingredients_250x250/sliced-carrot.png", "Vegetables"),
+        Product(5, "Fresh Spinach", 20.0, "https://spoonacular.com/cdn/ingredients_250x250/spinach.jpg", "Vegetables"),
+        Product(6, "Green Capsicum", 45.0, "https://spoonacular.com/cdn/ingredients_250x250/green-pepper.jpg", "Vegetables"),
+        Product(7, "Cauliflower", 50.0, "https://spoonacular.com/cdn/ingredients_250x250/cauliflower.jpg", "Vegetables"),
+        Product(8, "Amul Milk (500ml)", 32.0, "https://spoonacular.com/cdn/ingredients_250x250/milk.png", "Dairy"),
+        Product(9, "Britannia Bread", 45.0, "https://spoonacular.com/cdn/ingredients_250x250/white-bread.jpg", "Dairy"),
+        Product(10, "Farm Eggs (6 pcs)", 60.0, "https://spoonacular.com/cdn/ingredients_250x250/egg.png", "Dairy"),
+        Product(11, "Amul Butter", 55.0, "https://spoonacular.com/cdn/ingredients_250x250/butter.png", "Dairy"),
+        Product(12, "Cheddar Cheese", 120.0, "https://spoonacular.com/cdn/ingredients_250x250/cheddar-cheese.png", "Dairy"),
+        Product(13, "Curd / Yogurt", 30.0, "https://spoonacular.com/cdn/ingredients_250x250/plain-yogurt.jpg", "Dairy"),
+        Product(14, "Lays Classic", 20.0, "https://spoonacular.com/cdn/ingredients_250x250/potato-chips.jpg", "Snacks"),
+        Product(15, "Coca Cola (1L)", 60.0, "https://spoonacular.com/cdn/ingredients_250x250/coca-cola.png", "Snacks"),
+        Product(16, "Doritos Nacho", 35.0, "https://spoonacular.com/cdn/ingredients_250x250/tortilla-chips.jpg", "Snacks"),
+        Product(17, "Oreo Biscuits", 30.0, "https://spoonacular.com/cdn/ingredients_250x250/chocolate-sandwich-cookie.png", "Snacks"),
+        Product(18, "Cadbury Silk", 80.0, "https://spoonacular.com/cdn/ingredients_250x250/milk-chocolate.jpg", "Snacks"),
+        Product(19, "Orange Juice", 90.0, "https://spoonacular.com/cdn/ingredients_250x250/orange-juice.jpg", "Snacks"),
+        Product(20, "Popcorn Pack", 40.0, "https://spoonacular.com/cdn/ingredients_250x250/popcorn.png", "Snacks")
     )
 
     // The currently displayed products (can be filtered)
