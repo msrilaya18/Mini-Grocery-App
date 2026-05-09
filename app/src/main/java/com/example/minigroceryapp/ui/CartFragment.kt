@@ -41,6 +41,10 @@ class CartFragment : Fragment() {
 
         binding.recyclerCart.adapter = adapter
 
+        binding.btnBack.setOnClickListener {
+            findNavController().popBackStack()
+        }
+
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.cartItems.collectLatest { items ->
                 adapter.submitList(items)

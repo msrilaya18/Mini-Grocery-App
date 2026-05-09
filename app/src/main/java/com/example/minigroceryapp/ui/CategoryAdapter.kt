@@ -18,16 +18,17 @@ class CategoryAdapter(
             binding.tvCategory.text = category
             
             val context = binding.root.context
-            val typedValue = android.util.TypedValue()
+            val isDark = (context.resources.configuration.uiMode and android.content.res.Configuration.UI_MODE_NIGHT_MASK) == android.content.res.Configuration.UI_MODE_NIGHT_YES
             
+            val unselectedBg = if (isDark) Color.parseColor("#333333") else Color.WHITE
+            val unselectedText = if (isDark) Color.WHITE else Color.parseColor("#333333")
+
             if (position == selectedPosition) {
                 binding.root.setCardBackgroundColor(Color.parseColor("#E91E63"))
                 binding.tvCategory.setTextColor(Color.WHITE)
             } else {
-                context.theme.resolveAttribute(com.google.android.material.R.attr.colorSurface, typedValue, true)
-                binding.root.setCardBackgroundColor(typedValue.data)
-                context.theme.resolveAttribute(android.R.attr.textColorPrimary, typedValue, true)
-                binding.tvCategory.setTextColor(typedValue.data)
+                binding.root.setCardBackgroundColor(unselectedBg)
+                binding.tvCategory.setTextColor(unselectedText)
             }
 
             binding.root.setOnClickListener {

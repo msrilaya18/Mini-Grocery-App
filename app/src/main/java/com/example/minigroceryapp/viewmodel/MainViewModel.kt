@@ -19,12 +19,26 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     // Hardcoding some beautiful mock data with Unsplash images
     private val allProducts = listOf(
-        Product(1, "Fresh Tomatoes (500g)", 40.0, "https://img.icons8.com/color/300/000000/tomato.png", "Vegetables"),
-        Product(2, "Onions (1kg)", 35.0, "https://img.icons8.com/color/300/000000/onion.png", "Vegetables"),
-        Product(3, "Amul Milk (500ml)", 32.0, "https://img.icons8.com/color/300/000000/milk-bottle.png", "Dairy"),
-        Product(4, "Britannia Bread", 45.0, "https://img.icons8.com/color/300/000000/bread.png", "Dairy"),
-        Product(5, "Lays Classic", 20.0, "https://img.icons8.com/color/300/000000/potato-chips.png", "Snacks"),
-        Product(6, "Coca Cola (1L)", 60.0, "https://img.icons8.com/color/300/000000/cola.png", "Snacks")
+        Product(1, "Fresh Tomatoes", 40.0, "https://loremflickr.com/320/240/tomato?lock=1", "Vegetables"),
+        Product(2, "Red Onions", 35.0, "https://loremflickr.com/320/240/onion?lock=2", "Vegetables"),
+        Product(3, "Potatoes", 30.0, "https://loremflickr.com/320/240/potato?lock=3", "Vegetables"),
+        Product(4, "Carrots", 25.0, "https://loremflickr.com/320/240/carrot?lock=4", "Vegetables"),
+        Product(5, "Fresh Spinach", 20.0, "https://loremflickr.com/320/240/spinach?lock=5", "Vegetables"),
+        Product(6, "Green Capsicum", 45.0, "https://loremflickr.com/320/240/capsicum?lock=6", "Vegetables"),
+        Product(7, "Cauliflower", 50.0, "https://loremflickr.com/320/240/cauliflower?lock=7", "Vegetables"),
+        Product(8, "Amul Milk (500ml)", 32.0, "https://loremflickr.com/320/240/milk?lock=8", "Dairy"),
+        Product(9, "Britannia Bread", 45.0, "https://loremflickr.com/320/240/bread?lock=9", "Dairy"),
+        Product(10, "Farm Eggs (6 pcs)", 60.0, "https://loremflickr.com/320/240/eggs?lock=10", "Dairy"),
+        Product(11, "Amul Butter", 55.0, "https://loremflickr.com/320/240/butter?lock=11", "Dairy"),
+        Product(12, "Cheddar Cheese", 120.0, "https://loremflickr.com/320/240/cheese?lock=12", "Dairy"),
+        Product(13, "Curd / Yogurt", 30.0, "https://loremflickr.com/320/240/yogurt?lock=13", "Dairy"),
+        Product(14, "Lays Classic", 20.0, "https://loremflickr.com/320/240/potatochips?lock=14", "Snacks"),
+        Product(15, "Coca Cola (1L)", 60.0, "https://loremflickr.com/320/240/cola?lock=15", "Snacks"),
+        Product(16, "Doritos Nacho", 35.0, "https://loremflickr.com/320/240/doritos?lock=16", "Snacks"),
+        Product(17, "Oreo Biscuits", 30.0, "https://loremflickr.com/320/240/oreo?lock=17", "Snacks"),
+        Product(18, "Cadbury Silk", 80.0, "https://loremflickr.com/320/240/chocolate?lock=18", "Snacks"),
+        Product(19, "Orange Juice", 90.0, "https://loremflickr.com/320/240/orangejuice?lock=19", "Snacks"),
+        Product(20, "Popcorn Pack", 40.0, "https://loremflickr.com/320/240/popcorn?lock=20", "Snacks")
     )
 
     // The currently displayed products (can be filtered)
