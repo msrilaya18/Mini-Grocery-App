@@ -17,12 +17,17 @@ class CategoryAdapter(
         fun bind(category: String, position: Int) {
             binding.tvCategory.text = category
             
+            val context = binding.root.context
+            val typedValue = android.util.TypedValue()
+            
             if (position == selectedPosition) {
                 binding.root.setCardBackgroundColor(Color.parseColor("#E91E63"))
                 binding.tvCategory.setTextColor(Color.WHITE)
             } else {
-                binding.root.setCardBackgroundColor(Color.WHITE)
-                binding.tvCategory.setTextColor(Color.parseColor("#333333"))
+                context.theme.resolveAttribute(com.google.android.material.R.attr.colorSurface, typedValue, true)
+                binding.root.setCardBackgroundColor(typedValue.data)
+                context.theme.resolveAttribute(android.R.attr.textColorPrimary, typedValue, true)
+                binding.tvCategory.setTextColor(typedValue.data)
             }
 
             binding.root.setOnClickListener {

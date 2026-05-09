@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:background="?android:attr/colorBackground">
 
     <TextView
         android:id="@+id/tvCartTitle"
@@ -29,7 +29,7 @@
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/white"
+        android:background="?attr/colorSurface"
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent">
 
