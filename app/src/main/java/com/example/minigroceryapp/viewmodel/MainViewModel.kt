@@ -19,12 +19,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     // Hardcoding some beautiful mock data with Unsplash images
     private val allProducts = listOf(
-        Product(1, "Fresh Tomatoes (500g)", 40.0, "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=300", "Vegetables"),
-        Product(2, "Onions (1kg)", 35.0, "https://images.unsplash.com/photo-1618512496248-a07ce83aa8cb?w=300", "Vegetables"),
-        Product(3, "Amul Milk (500ml)", 32.0, "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=300", "Dairy"),
-        Product(4, "Britannia Bread", 45.0, "https://images.unsplash.com/photo-1598373182133-52452f7691ef?w=300", "Dairy"),
-        Product(5, "Lays Classic", 20.0, "https://images.unsplash.com/photo-1566478989037-eade3f7e1c84?w=300", "Snacks"),
-        Product(6, "Coca Cola (1L)", 60.0, "https://plus.unsplash.com/premium_photo-1663454743275-5caad55cdade?w=300", "Snacks")
+        Product(1, "Fresh Tomatoes (500g)", 40.0, "https://img.icons8.com/color/300/000000/tomato.png", "Vegetables"),
+        Product(2, "Onions (1kg)", 35.0, "https://img.icons8.com/color/300/000000/onion.png", "Vegetables"),
+        Product(3, "Amul Milk (500ml)", 32.0, "https://img.icons8.com/color/300/000000/milk-bottle.png", "Dairy"),
+        Product(4, "Britannia Bread", 45.0, "https://img.icons8.com/color/300/000000/bread.png", "Dairy"),
+        Product(5, "Lays Classic", 20.0, "https://img.icons8.com/color/300/000000/potato-chips.png", "Snacks"),
+        Product(6, "Coca Cola (1L)", 60.0, "https://img.icons8.com/color/300/000000/cola.png", "Snacks")
     )
 
     // The currently displayed products (can be filtered)
