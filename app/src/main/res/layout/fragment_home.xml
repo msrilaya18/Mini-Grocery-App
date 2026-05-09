@@ -43,6 +43,8 @@
         android:clipToPadding="false"
         android:paddingHorizontal="8dp"
         android:paddingBottom="100dp"
+        android:overScrollMode="always"
+        android:layoutAnimation="@anim/layout_animation_slide_up"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:spanCount="2"
         app:layout_constraintBottom_toBottomOf="parent"
