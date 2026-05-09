@@ -19,7 +19,8 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     // Hardcoding some beautiful mock data with Unsplash images
     private val allProducts = listOf(
-        Product(1, "Apple", 20.0, "https://cdn.dummyjson.com/product-images/groceries/apple/thumbnail.png", "Vegetables"),
+
+    ),
         Product(2, "Beef Steak", 165.0, "https://cdn.dummyjson.com/product-images/groceries/beef-steak/thumbnail.png", "Vegetables"),
         Product(3, "Chicken Meat", 150.0, "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/thumbnail.png", "Vegetables"),
         Product(4, "Cooking Oil", 125.0, "https://cdn.dummyjson.com/product-images/groceries/cooking-oil/thumbnail.png", "Snacks"),
